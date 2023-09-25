@@ -33,9 +33,7 @@ with open('xuids.csv', 'r') as file:
                 "x-xbl-contract-version": "1",
                 "Accept-Encoding": "gzip, deflate",
                 "x-xbl-clientseqnum": "2",
-                "signature": "AAAAAQHZ6bUlJABpPZSWe69aPES/teR/+md2Lmq7+9yclBnGPNMeRU9nNWhhR5hxboOPAG+VxmRI5lEFFveBe3tzL5XwKH03ltsJWg==",
                 "accept": "application/json",
-                "ms-cv": "fehIcPuGpTq3rwEvtzg9ux.201",
                 "authorization": token,
                 "Content-Type": "application/json",
                 "Host": "xblmessaging.xboxlive.com",
@@ -43,7 +41,8 @@ with open('xuids.csv', 'r') as file:
                 "Cache-Control": "no-cache"
             }
 
-            body = {"parts":[{"contentType":"text","version":0,"text":"Boom Roasted - Michael Scott"}]}
+            #message body
+            body = {"parts":[{"contentType":"text","version":0,"text":"Insert message string here"}]}
             
             #sending the request 
             conn.request("POST", "/network/xbox/users/me/conversations/users/xuid("+individual_id+")", body=json.dumps(body), headers=headers)
