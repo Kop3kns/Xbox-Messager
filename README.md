@@ -1,5 +1,6 @@
-# Xbox-Messager
-Sends automated messages based on an xuid database from my other repository
+# Xbox Messenger Automation Tool
 
-Repository url to get a database is below:
-https://github.com/Kop3kns/xuid-Scraper
+An advanced messaging tool that automates the sending of messages using a database derived from the XUID (Xbox User ID). The XUID database can be sourced from our accompanying repository.
+
+🔗 Access the XUID Database Repository here:
+[https://github.com/Kop3kns/xuid-Scraper](https://github.com/Kop3kns/xuid-Scraper)
